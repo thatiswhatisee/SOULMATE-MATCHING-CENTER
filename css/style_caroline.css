@@ -1,0 +1,237 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  font-family: "montserrat", sans-serif;
+}
+
+.hauptbox{
+width:80%;
+}
+
+
+
+h1{
+  font-weight: 700;
+  font-size: 2em;
+  color:black;
+  text-align: center;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+
+}
+
+li {
+  list-style:none;
+  font-size: 1em;
+  font-weight: 600;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+    text-align: center;
+}
+
+a:visited{
+  color:black;
+}
+
+a:hover{
+  color:hotpink;
+   
+    
+}
+
+img{
+  height: 50%;
+  width:50%;
+  float:left;
+  margin-right: 20px;
+}
+
+.card1{
+  float: left;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.card2{
+  float: none;
+  margin-bottom: 50px;
+    padding: 10px;
+}
+.card3{
+  float: right;
+  margin-bottom: 50px;
+    
+
+}
+
+p{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+
+h2{
+  font-weight: 600;
+  font-size: 1.75em;
+  color: hotpink;
+  text-align: center;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 1.5em;
+  color: lightgrey;
+  text-align: center;
+}
+
+.column{
+  columns: 3 7em;
+  column-gap: 3em;
+}
+
+
+footer{
+  background-color: hotpink;
+  color: black;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 250px 250px 250px;
+}
+.box1 {
+  background-color: darkorange;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.box2{
+  background-image: url("https://i.pinimg.com/564x/fb/33/04/fb330445ebd11e6d4ffee84b5e26f62b.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.box3 {
+  background-color: burlywood;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.box4 {
+    background-color: blanchedalmond;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  
+    
+}
+.box5 {
+  background-image: url("https://i.pinimg.com/564x/ee/77/1e/ee771ed379af8de2cdef2db95678f097.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.box6 {
+ background-color: cadetblue;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.box7 {
+  background-color: teal;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.box8 {
+  background-image: url("https://i.pinimg.com/564x/e9/63/f4/e963f41139fe5e2ccf94d55a6718451d.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.box9 {
+  background-color: darkorange;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+section{
+  margin-bottom: 40px;
+}
+
+
+/* The animation */
+@keyframes color-change {
+  from {
+    color: deeppink;
+  }
+  20% {
+    color: blueviolet;
+  }
+  40%{
+    color: blue;
+  }
+  60% {
+    color: green;
+  }
+    80%{
+    color: yellow;
+  }
+  to {
+    color: red;
+  }
+}
+
+/* The element */
+h1 {
+  color: red;
+  animation-name: color-change;
+  animation-duration: 5s;
+}
